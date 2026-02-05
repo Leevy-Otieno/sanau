@@ -1,0 +1,66 @@
+.project-item {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s ease;
+}
+
+.project-item:hover {
+  background-color: #f1f1f1;
+}
+
+.project-thumbnail {
+  width: 40px;
+  height: 40px;
+  background-color: #007bff;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%; /* Makes it a circle */
+  margin-right: 15px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.project-content {
+  flex-grow: 1;
+}
+
+.project-title {
+  margin: 0 0 5px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.project-description {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.delete-button {
+  background-color: #dc3545; /* Red color */
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 1;
+  transition: background-color 0.3s ease;
+  margin-left: 15px;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}

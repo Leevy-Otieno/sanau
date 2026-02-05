@@ -1,9 +1,10 @@
-
-import React, { useState } from 'react';
+// src/components/AddProjectForm.jsx
+import { useState } from "react";
+import "./AddProjectForm.css"; // <-- ADDED THIS LINE
 
 const AddProjectForm = ({ onAddProject }) => {
-  const [title, setTitle] = useState('');
-  const [description, setDescription] = useState('');
+  const [title, setTitle] = useState("");
+  const [description, setDescription] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -11,10 +12,10 @@ const AddProjectForm = ({ onAddProject }) => {
       onAddProject({
         id: Date.now(),
         title: title.trim(),
-        description: description.trim()
+        description: description.trim(),
       });
-      setTitle('');
-      setDescription('');
+      setTitle("");
+      setDescription("");
     }
   };
 
@@ -44,7 +45,9 @@ const AddProjectForm = ({ onAddProject }) => {
             required
           />
         </div>
-        <button type="submit" className="add-button">Add</button>
+        <button type="submit" className="add-button">
+          Add
+        </button>
       </form>
     </div>
   );
